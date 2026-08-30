@@ -5,8 +5,8 @@
   "description": "POS print server with escpos drivers and print builders",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js",
+    "start": "node init && node server.js",
+    "dev": "node init && node --watch server.js",
     "usb:list": "node scripts/list-usb-devices.js",
     "postinstall": "patch-package"
   },
