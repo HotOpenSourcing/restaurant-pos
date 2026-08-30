@@ -5,8 +5,8 @@
   "description": "POS general-purpose backend API service (extensible modules). Keeps third-party secrets server-side.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "start": "node init && node server.js",
+    "dev": "node init && node --watch server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
